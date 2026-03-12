@@ -1,3 +1,4 @@
+
 /* Copyright (c) 2020 MTHS All rights reserved
  *
  * Created by: Josiah
@@ -5,7 +6,7 @@
  * This program will do cookie clicker
 */
 
-// variables
+// variable
 let cookies: number = 0
 
 // start
@@ -13,13 +14,13 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
 
-    cookies = cookies + 1
-    basic.showNumber(cookies)
+    cookies = cookies + 1 //  add cookies +1 when A is pressed  
+    basic.showNumber(cookies) 
 }) 
 
 
-// stop
+// rest cookies to 0
 input.onButtonPressed(Button.B, function () { 
-    cookies = 0
+    cookies = 0 
     basic.showNumber(cookies)
 })
